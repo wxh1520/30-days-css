@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clarence-170602-Button</title>
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .wrapper {
+      margin-top: 20px;
+      position: relative;
+      width: 200px;
+      height: 38px;
+    }
+    .wrapper::before{
+      content:'';
+      display: block;
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      border: 1px solid #CBC7BC;
+      border-radius: 6px;
+      z-index: -1;
+    }
+    .wrapper ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      height: 38px;
+      border-radius: 5px;
+    }
+    .wrapper ul > li {
+      flex-basis: 0;
+      flex-grow: 1;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-size: 12px;
+      line-height: 38px;
+      color: #f5f6f7;
+      text-shadow: 0.5px 0.5px 0.5px white;
+    }
+    .wrapper ul li a {
+      display:block;
+      box-shadow: inset 0 0 2px hsla(0,0%,0%,0.15);
+    }
+    .login {
+      background: linear-gradient(to bottom, #a8b4c2 0%,#828a98 100%);
+      border-radius: 4px 0 0 4px;
+    }
+    .sign {
+      background: linear-gradient(to bottom, #8fb6e3 0%,#5b84d3 100%);
+      border-radius: 0 4px 4px 0;
+    }
+    .login:hover{
+      cursor: pointer;
+      background: linear-gradient(to bottom, #a3afbe 0%,#919baa 100%);
+    }
+    .sign:hover{
+      background: linear-gradient(to bottom, #8ab2e2 0%,#668fd6 100%);
+      cursor: pointer;
+    }
+    .login:active{
+      background: linear-gradient(to bottom, #828a98 0%,#828a98 100%);
+    }
+    .sign:active{
+      background: linear-gradient(to bottom, #5b84d3 0%,#5b84d3 100%);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <ul>
+      <li><a class="login">login</a></li>
+      <li><a class="sign">sign up</a></li>
+    </ul>
+  </div>
+</body>
+</html>
