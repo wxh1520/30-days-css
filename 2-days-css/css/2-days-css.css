@@ -1,0 +1,112 @@
+*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		ul li{
+		    list-style:none;
+		}
+		img {
+			width: 100%;
+			vertical-align: middle;
+		}
+
+		.fl{
+			float:left;
+		}
+		.fr{
+			float:right;
+		}
+		.clearfix::before,
+		.clearfix::after {
+			content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.cont{
+	width:500px;
+	border:1px solid #202020;
+	height:auto;
+	border-radius:5px;
+	margin: 10px auto;
+}
+.cont .tle{
+	padding:15px;
+	background:#3f3f3f;
+	color:#fff;
+	font-size:25px;
+    font-weight:bold;
+}
+.cont ul{
+	background:#535353;
+	position: relative;
+}
+.cont ul li{
+	padding:8px;
+	border-top:1px solid #202020;
+	color:#fff;
+	font-weight:bold;
+}
+.cont ul li:hover{
+	background:#3f3f3f;
+}
+.cont ul li:last-child:hover{
+	background:#535353;
+}
+.cont ul li img{
+	width:50px;
+	margin-right:10px;
+	border-radius:5px;
+}
+.cont_list p{
+	height:25px;
+	line-height:25px;
+}
+.cont_list p:last-child{
+	color:#b8c6cc;
+}
+.price{
+	line-height:56px;
+	margin-right:10px;
+	font-size:18px;
+}
+.total{
+	padding:10px;
+	line-height:40px;
+}
+.btn{
+	padding:10px 25px;
+	border-radius:5px;
+	font-size:18px;
+	margin:8px;
+	background: linear-gradient(to bottom,#6dad40, #59a226) ;
+	box-shadow: 1px 1px 1px #c0c9d4 inset, -1px -1px 1px #c0c9d4 inset, inset 0 1.2em 0 hsla(0, 0%, 100%, 0.1);
+	color:#fff;
+	text-decoration:none;
+	-webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+}
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.btn:hover, .btn:focus, .btn:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
