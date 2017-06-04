@@ -57,15 +57,18 @@
 	background:#535353;
 }
 .cont ul li img{
+	display:block;
 	width:50px;
 	margin-right:10px;
 	border-radius:5px;
+	float:left;
 }
-.cont_list p{
+.cont_list span{
 	height:25px;
 	line-height:25px;
+	display:block;
 }
-.cont_list p:last-child{
+.cont_list span:last-child{
 	color:#b8c6cc;
 }
 .price{
