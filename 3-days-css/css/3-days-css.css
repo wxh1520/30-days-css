@@ -1,0 +1,106 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+ul li{
+    list-style:none;
+}
+img {
+	width: 100%;
+	vertical-align: middle;
+}
+ a{
+ 	color:#fff;
+	text-decoration:none;
+ }
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.cont{
+	width:300px;
+	border:1px solid #d1d1d1;
+	height:auto;
+	border-radius:5px;
+	margin: 10px auto;
+}
+.cont .tle{
+	padding:15px;
+	background:#e6eaec;
+	color:#5d6b70;
+	font-size:25px;
+    font-weight:bold;
+}
+.cont ul{
+	position: relative;
+}
+.cont ul li{
+	padding:8px;
+	border-top:1px solid #f0f2f3;
+	color:#39ca74;
+	font-weight:bold;
+}
+.regular-checkbox{
+	display:none;
+}
+.big-checkbox + label {
+padding: 18px;
+}
+.regular-checkbox + label {
+    border: 1px solid #cacece;
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    border-radius:50px;
+}
+.big-checkbox:checked + label::after {
+    font-size: 28px;
+    left: 6px;
+}
+.regular-checkbox:checked + label::after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #39ca74;
+   
+}
+.teimg{
+	width:35px;
+	height:35px;
+	line-height:30px;
+	background:#e6eaec;
+	border-radius:50px;
+	text-align: center;
+	border:1px solid #e6eaec;
+}
+.teimg img{
+	width:20px;
+}
+.teimg:hover{
+	border:1px solid #5d6b70;
+	background:#FFFFFF;
+	opacity:0.4;
+	transition:0.5s;
+}
+.te{
+	position: absolute;
+	margin-left:10px;
+}
+i{
+ font-style:normal;
+}
