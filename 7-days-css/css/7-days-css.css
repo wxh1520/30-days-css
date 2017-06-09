@@ -1,0 +1,100 @@
+    * {
+    	margin: 0px;
+    	padding: 0px;
+    	box-sizing: border-box;
+    }
+    
+    body {
+    	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    	font-size: 14px;
+    	color: #fff;
+    }
+    
+    a {
+    	color: #fff;
+    	text-decoration: none;
+    }
+    
+    ul,
+    ol {
+    	list-style: none;
+    }
+    
+    .cont {
+    	width: 490px;
+    	height: auto;
+    	margin: 10px auto;
+    	background: url(../img/form_img.png) no-repeat scroll 100% 100%;
+    	padding: 50px;
+    }
+    
+    .loginBox {
+    	position: relative;
+    	background-color: #FEFEFE;
+    	border: 5px solid #f2f7f9;
+    	border-radius: 5px;
+    	color: #444;
+    	margin: 0 auto;
+    	width: 388px;
+    	box-shadow: 0px 0px 0px 1px #BfD6E1;
+    	padding: 25px 0px;
+    }
+    
+    .loginBox:before {
+    	content: "";
+    	position: absolute;
+    	right: 45%;
+    	top: 380px;
+    	width: 0;
+    	height: 0;
+    	border-left: 25px solid transparent;
+    	border-right: 25px solid transparent;
+    	border-top: 30px solid #fff;
+    }
+    
+    .loginBox li {
+    	padding: 10px;
+    	text-align: center;
+    }
+    
+    .loginBox li input[type="text"],
+    .loginBox li textarea {
+    	width: 250px;
+    	height: 35px;
+    	line-height: 35px;
+    	border-radius: 3px;
+    	border: 1px solid #ccdade;
+    	padding: 0px 5px;
+    	box-shadow: 0px 0px 0px 5px #f2f7f9;
+    	color: #626262;
+    }
+    
+    ::-moz-placeholder {
+    	color: #798e94;
+    }
+    
+    ::-webkit-input-placeholder {
+    	color: #798e94;
+    }
+    
+    .loginBox li textarea {
+    	resize: none;
+    	height: 140px;
+    }
+    
+    .bt {
+    	color: #6b97a8;
+    	border: 1px solid #a5c5d0;
+    	border-radius: 50px;
+    	padding: 10px 15px;
+    	box-shadow: 0px 0px 0px 5px #f2f7f9;
+    	display: inline-block;
+    	background: #dbecf3;
+    	margin-left: 9.5em;
+    }
+    
+    .bt:hover {
+    	background: #fff;
+    	-webkit-transition-duration: 0.5s;
+    	transition-duration: 0.5s;
+    }
