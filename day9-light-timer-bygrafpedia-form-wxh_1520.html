@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-06-11-日历</title>
+		<link rel="stylesheet" href="css/7-days-css.css" />
+	</head>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color: #fff;
+	      
+	    }
+	     .wrapper {
+		    width: 500px;
+		    height:500px;
+		    margin: 20px auto;
+			background:#ebeced;	
+			padding:20px;
+		}
+		.block_left{
+			height: 130px;
+			width:200px;
+			float: left;
+			position: relative;
+		}
+		.block_right{
+			height: 150px;
+			width:200px;
+			float: left;
+			margin-left: 10px;
+			position: relative;
+		}
+		.block_left_top,.block_right_top {
+		    height: 65px;
+		    width: 180px;
+		    position: absolute;
+		    top: 0;
+		    left: 2px;
+		    z-index: 0;
+		    background: #e7e7e7;
+		    overflow: hidden;
+		     border-top-right-radius:2px;
+			border-top-left-radius:2px;
+			box-shadow: 0px 0px 1px 0px #1f2021;
+		}
+		.block_left_top_count,.block_right_top_count{
+		    font-family: "Comic Sans MS", cursive;
+		    font-size: 90px;
+		    line-height: 90px;
+		    color: #505359;
+		    text-align: center;
+		    margin-top: 15px;
+		}
+		.block_left_bottom,.block_right_bottom {
+		    height: 65px;
+			width: 180px;
+			position: absolute;
+			top: 65px;
+			left: 2px;
+			z-index: 3;
+			background:#d2d4d9;
+			overflow: hidden;
+		    border-bottom-right-radius:2px;
+			border-bottom-left-radius:2px;
+			box-shadow: 0px 0px 1px 0px #1f2021;
+			text-align: center;
+		}
+		.block_left_bottom_count,.block_right_bottom_count {
+		    font-family: "Comic Sans MS", cursive;
+			font-size: 90px;
+			line-height: 90px;
+			color: #505359;
+			text-align: center;
+			margin-top: -50px;
+			margin-left: 2px;
+		}
+		.block_left_bottom span,.block_right_bottom span{
+			color:#626262;
+			font-size:16px;
+		}
+		.block_effect1{
+		    height:65px;
+		    width: 180px;
+		    position: absolute;
+		    bottom:-3px;
+		    left: 2px;
+		    z-index:2;
+		    background:#d2d4d9;
+		    border-bottom-right-radius:2px;
+			border-bottom-left-radius:2px;
+			border-bottom:1px solid #b9b9bb;
+		}
+		.block_effect2 {
+		    height:65px;
+		    width: 180px;
+		    position: absolute;
+		    bottom:-5px;
+		    left: 2px;
+		    z-index: 1;
+		    background:#d2d4d9;
+		    border-bottom-right-radius:2px;
+			border-bottom-left-radius:2px;
+			border-bottom:1px solid #b9b9bb;
+		}
+		.block_effect3{
+			height: 15px;
+			width: 180px;
+			position: absolute;
+			bottom:15px;
+			left: 2px;
+			z-index:0;
+			background:#d2d4d9;
+		    border-bottom-right-radius:2px;
+			border-bottom-left-radius:2px;
+			border-bottom:1px solid #b9b9bb;
+		}
+		.block_effect4{
+			height: 15px;
+			width: 180px;
+			position: absolute;
+			bottom:17px;
+			left: 2px;
+			z-index:0;
+			background:#d2d4d9;
+		    border-bottom-right-radius:2px;
+			border-bottom-left-radius:2px;
+			border-bottom:1px solid #b9b9bb;
+		}
+	</style>
+	<body>
+		<div class="wrapper">
+			<div class="block_left">
+				<div class="block_left_top">
+					<div class="block_left_top_count">12</div>	
+				</div>
+				<div class="block_left_bottom">
+					<div class="block_left_bottom_count">12</div>
+					<span>Minutes</span>
+				</div>
+				<div class="block_effect1"></div>
+				<div class="block_effect2"></div>	
+			</div>
+			<div class="block_right">
+				<div class="block_right_top">
+					<div class="block_right_top_count">47</div>	
+				</div>
+				<div class="block_right_bottom">
+					<div class="block_left_bottom_count">47</div>
+					<span>Seconds</span>
+				</div>
+				<div class="block_effect3"></div>
+				<div class="block_effect4"></div>
+				
+			</div>
+		</div>
+	</body>
+</html>
