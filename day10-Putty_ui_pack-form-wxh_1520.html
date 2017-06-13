@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-06-12-日历</title>
+	</head>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color: #fff; 
+	    }
+	    a {
+			color: #000;
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+	    
+	    .wr{
+	    	width:350px;
+	    	margin:150px auto;
+	    }
+	    .btn{
+	    	background:#1f2226;
+	    	width:50px;
+	    	height:50px;
+	    	border-radius:50px;
+	    	position: absolute;
+	    	z-index:3;
+	    	top: 70px;
+	    	left:48%;
+	    	box-shadow:inset 0px 0px 5px 2px rgb(0, 0, 0);
+	    	text-align: center;
+    		line-height: 50px;
+    		text-shadow:0 -2px 10px rgb(255, 165, 0);
+    		font-size:20px;
+    		font-weight:bold;
+	    }
+	    .cont{
+	    	width:350px;
+	    	height:auto;
+	    	background:#2a2d33;
+	    	border:1px solid #1f2226;
+	    	padding:15px;
+	    	position: relative;
+	    }
+	    .cont:before {
+		    content: "";
+		    position: absolute;
+		    left: 160px;
+		    top: -25px;
+		    width: 0;
+		    height: 0;
+		    border-left: 15px solid transparent;
+		    border-right: 15px solid transparent;
+		    border-bottom: 25px solid #2a2d33; 
+			}
+	    .dat{
+	    	box-shadow: 0px 0px 1px 2px #585858;
+    		border-radius: 5px;
+	    }
+	    .header{
+	    	background:#2d3037;
+	    	text-align: center;
+			position: relative;
+			padding:5px;
+			border-top-right-radius:5px;
+	    	border-top-left-radius:5px;
+			box-shadow: 1px 1px 1px #545454 inset, -1px -1px 1px #464646 inset, inset 0 1.6em 0 hsla(0, 0%, 100%, 0.1);
+	    }
+	     .header .prv-m,.header .nxt-m{
+	    	text-decoration: none;
+		    width: 31px;
+		    position: absolute;
+		    display: inline-block;
+		    height: 30px;
+		    top:8px;
+		    line-height:28px;
+		    font-weight:bold;
+		    font-size:20px;
+		    box-shadow:inset inset 0px 0px 5px 0px #24272c;
+	    }
+	    .header .prv-m{
+	    	left:20px;
+	    }
+	    .header .nxt-m{
+	    	right:20px;
+	    }
+	    .header h1{
+		    display: inline-block;
+		    font:18px "Roboto", Arial, Helvetica, Geneva, sans-serif;
+		    color: #fff;
+		    text-shadow: 0 -1px 3px rgba(0,0,0,0.5);
+		    line-height:35px;
+		    padding:0px 10px;
+		    background:#2a2d33;
+		    border-radius:5px;
+		    border:1px solid #3f444d;
+		    box-shadow:inset 0px 1px 2px 1px rgb(0, 0, 0);
+	    }
+	    .days{
+	    	padding:8px 5px;
+	    	background:#30343b;
+	    	
+	    }
+	    .days ul li{
+	    	display:inline-block;
+	    	box-sizing: border-box;
+	    	width:13.1%;
+	    	text-align:center;
+	    	color:#50a55f;
+	    	font-size:16px;
+	    	font-weight:bold;
+	    }
+	    .day{
+	    	font-size: 0;
+		    text-align: center;
+		    background:#454a54;
+		    border-bottom-right-radius:5px;
+	    	border-bottom-left-radius:5px;
+	    }
+	    .day ul li{
+	    	display:inline-block;
+	    	box-sizing: border-box;
+	    	width:14.2%;
+	    	height:35px;
+	    	line-height:35px;
+	    	text-align:center;
+	    	color:#858fa2;
+	    	font-size:16px;
+	    	position:relative;
+	    	border-top: 1px solid #3b3f47;
+	    	box-shadow: inset 0px 1px 0px rgba(255, 253, 253, 0.2);
+	    }
+	    .day ul li:first-child{
+	    	color:#5a616e;
+	    }
+	    .day ul li:nth-child(17){
+	    	color:#fff;
+	    }
+	</style>
+	
+	<body>
+		<div class="wr">
+			<div class="btn">btn</div>
+			<div class="cont">
+				<div class="dat">
+					<div class="header">
+						<a href="javaScript:;" class="prv-m"><</a>
+							<h1>January2013</h1>
+					    <a href="javaScript:;" class="nxt-m">></a>
+					</div>
+					<div class="days">
+						<ul>
+							<li>Mo</li>
+							<li>Tu</li>
+							<li>We</li>
+							<li>Th</li>
+							<li>Fr</li>
+							<li>Su</li>
+							<li>Su</li>
+						</ul>
+					</div>
+					<div class="day">
+						<ul>
+							<li>31</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+							<li>11</li>
+							<li>12</li>
+							<li>13</li>
+							<li>14</li>
+							<li>15</li>
+							<li>16</li>
+							<li>17</li>
+							<li>18</li>
+							<li>19</li>
+							<li>20</li>
+							<li>21</li>
+							<li>22</li>
+							<li>23</li>
+							<li>24</li>
+							<li>25</li>
+							<li>26</li>
+							<li>27</li>
+							<li>28</li>
+							<li>29</li>
+							<li>30</li>
+							<li>31</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
