@@ -10,16 +10,16 @@ a{
 
 .wapper {
 	width: 940px;
-	height:400px;
+	height:auto;
 	background-color: #f7f7f7;
-	margin: 0 auto;
+	margin:0px auto;
 	margin-top: 100px;
-	overflow: hidden;
+	padding:20px;
 }
 /**边角**/
-.ribbon-holder {
+/*.ribbon-holder {
 	position: relative;
-}
+}*/
 .ribbon-holder {
 	position: absolute;
 	top:6.3em;
@@ -27,7 +27,7 @@ a{
 	height: 10em;
 }
 .right.ribbon-holder {
-	right:13.4em;
+	right:29.5em;
 }
 .ribbon-holder  .ribbon,
 .ribbon-holder .ribbon:hover {
@@ -57,10 +57,6 @@ a{
 	color: #fff;
 	}
 .right .ribbon {
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	right: -2.82em;
 }
@@ -68,12 +64,8 @@ a{
 	background-color: #F1475B;
 }
 /**边角 end**/
-.wapper ul {
-	margin-top: 30px;
-}
 
 .wapper li {
-	float: left;
 	margin-left: 30px;
 	width: 240px;
 	height:auto;
@@ -119,12 +111,12 @@ a{
 	margin: 15px 65px;
 	text-align:left;
 }
-.wapper li .desc span{
+ .desc span{
 	display: block;
 	color:#2e2e2e;
 	font-size:26px;
 }
-.wapper li .desc span small{
+ .desc span small{
 	color:#999999;
 	font-size:14px;
 	font-weight:300;
@@ -144,17 +136,10 @@ a{
 }
 .wapper li {
 	transition: All 0.4s ease-in-out;
-	-webkit-transition: All 0.4s ease-in-out;
-	-moz-transition: All 0.4s ease-in-out;
-	-o-transition: All 0.4s ease-in-out;
 }
 
 .wapper li:hover{
 	transform: translate(0, -10px);
-	-webkit-transform: translate(0, -10px);
-	-moz-transform: translate(0, -10px);
-	-o-transform: translate(0, -10px);
-	-ms-transform: translate(0, -10px);
 	box-shadow: 0px 5px 15px #e5e5e5;
 	border:2px solid #2cbae7;
 	

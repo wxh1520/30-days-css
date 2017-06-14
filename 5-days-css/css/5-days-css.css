@@ -58,17 +58,14 @@ a {
 	text-align: center;
 	color: #bbbbbb;
 	background: #f0f0f0;
-	border-style: none none solid solid;
-	border-bottom-width: 1px;
-	border-bottom-left-radius: 3px;
-	border-left-width: 1px;
-	border-color: #dcdcdc;
+	border-bottom-left-radius:3px;
+	border-left:1px solid #dcdcdc;
+	border-bottom:1px solid #dcdcdc;
 }
 
 .colse span {
 	padding: 5px;
 }
-
 .colse .span1:before {
 	content: '\2013';
 	font-size: 14px;
@@ -230,6 +227,4 @@ a {
 	padding: 2px 15px;
 	border-radius: 50px;
 }
-
-
 /**按钮  end**/
