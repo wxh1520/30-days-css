@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-06-15-share-buttons-by-@SachaGreif</title>
+	</head>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color: #fff; 
+	    }
+	    a {
+			color: #000;
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		.wrapper {
+		    width: 500px;
+		    height:300px;
+		    margin: 20px auto;
+			background:#ebeced;	
+			padding:20px;
+		}
+		.dt{
+			position:relative;
+			float:left;
+			width:100px;
+		    height:100px;
+			margin: 80px 25px;
+			text-align: center;
+			box-shadow: 0px 0px 5px 0px #ccc;
+    		border-radius: 5px;
+		}
+		.dt .dn{
+			height:50px;
+			padding:12px 10px;
+			border: 1px solid #ccc;
+			border-bottom:0px none;
+   			border-radius: 5px 5px 0px 0px;
+   			
+		}
+		.dn i{
+			font-style: normal;
+			font-weight:bold;
+			font-size:20px;
+			color:#626262;
+		
+		}
+         
+		.icons{
+			height:50px;
+			border-radius: 0px 0px 5px 5px;
+    		padding: 18px;
+    		text-transform: capitalize;
+    		
+		}
+		.icon{
+         	border:1px solid #6fa4b5;
+			background:#71c0da;
+         	box-shadow: 0px -4px 0 rgb(111, 164, 181) inset, 0px 0px 3px #efeeee inset;
+         }
+		.icon1{
+         	background:#5672ae;
+         	border:1px solid #35538f;
+         	box-shadow: 0px -4px 0 rgb(38, 65, 121) inset, 0px 0px 3px #efeeee inset;
+         }
+         .icon2{
+         	background:#545455;
+         	border:1px solid #303030;
+         	box-shadow: 0px -4px 0 rgb(22, 22, 25)  inset, 0px 0px 3px #efeeee inset;
+         }
+		.icon:before,.icon1:before,.icon2:before{
+		    content: '';
+		    position: absolute;
+		    bottom: -4px;
+		    left: 34px;
+		    top: 29.5px;
+		    width: 20px;
+		    height: 20px;
+		    transform-origin: left bottom;
+		    transform: rotate(45deg);
+		    background-color: #ebeced;
+		    border-right: 1px solid #6fa4b5;
+		    border-bottom: 1px solid #6fa4b5;
+		}
+		.icon span,.icon1 span{
+			padding-left:28px;
+		}
+		.icon::after{
+			content: "";
+		    font-size: 12px;
+		    position: absolute;
+		    top: 67px;
+		    left: 15px;
+		    width:25px;
+		    height:18px;
+		    color: #5c562b;
+		    background: #f1e472;
+		    border-radius: 20px;
+		}
+		.icon1::after{
+			content: "";
+		    font-size: 12px;
+		    position: absolute;
+		    top: 67px;
+		    left: 15px;
+		    width:25px;
+		    height:18px;
+		    color: #5c562b;
+		    background: #f1e472;
+		    border-radius: 20px;
+		}		
+	</style>
+	<body>
+		<div class="wrapper">
+			<div class="dt">
+				<div class="dn">
+					<i>12</i>
+				</div>
+				<div class="icon icons">
+					<span>tweet</span>
+				</div>
+			</div>
+			<div class="dt">
+				<div class="dn">
+					<i>34</i>
+				</div>
+				<div class="icon1 icons">
+					<span>like</span>
+				</div>
+			</div>
+			<div class="dt">
+				<div class="dn">
+					<i>56</i>
+				</div>
+				<div class="icon2 icons">
+					<span>+1</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
