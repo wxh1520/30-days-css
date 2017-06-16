@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-06-16-Download-Progress-Bar</title>
+	</head>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		 body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color: #fff;
+	    }
+	    .wars{
+	    	width:500px;
+	    	height:500px;
+	    	margin:20px auto;
+	    	background:rgba(42, 42, 42, 0.80);
+	    	padding:15px;
+	    	box-shadow:0px 0px 5px 1px #3F3F3F;
+	    }
+	    .down{
+	    	width:100%;
+	    	height:auto;
+	    	background:rgba(0, 0, 0, 0.25);
+	    	padding:5px;
+	    	border-radius:10px;
+	    	position:relative;
+	    	box-shadow:inset 0 2px 3px rgba(0, 0, 0, 0.30), 0 1px rgba(255, 255, 255, 0.08);
+	    }
+	    .down_inner{
+	    	height:20px;
+	    	position: relative;
+	    	border-radius:5px;
+	    	background-size:3em 3em; 	
+	    }
+	    .inner{
+	    	width:19%;
+	    	background-color:#f84823;
+	    	background-image:linear-gradient(-45deg, transparent 0em, transparent 0.8em, #f76040 0.9em, #f76040 2.1em, transparent 2.1em, transparent 2.9em, #f76040 3.1em);
+	    }
+	    .inner1{
+	    	width:49%;
+	    	background-color:#f27011;
+	    	background-image:linear-gradient(-45deg, transparent 0em, transparent 0.8em,#ef7b26 0.9em, #ef7b26 2.1em, transparent 2.1em, transparent 2.9em,#ef7b26 3.1em);
+	    }
+	    .inner2{
+	    	width:81%;
+	    	background-color:#f7c21d;
+	    	background-image:linear-gradient(-45deg, transparent 0em, transparent 0.8em,#f9bc00 0.9em, #f9bc00 2.1em, transparent 2.1em, transparent 2.9em,#f9bc00 3.1em);
+	    }
+	    .inner3{
+	    	width:100%;
+	    	background-color:#adf71e;
+	    	background-image:linear-gradient(-45deg, transparent 0em, transparent 0.8em,#bdfb44 0.9em, #bdfb44 2.1em, transparent 2.1em, transparent 2.9em,#bdfb44 3.1em);
+	    }
+	    .down_inner::before{
+	    	content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			bottom: 45%;
+			border-radius: 4px;
+	    	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+	    }
+	   .wars h5{
+		   	text-align:center;
+		   	padding:5px;
+		   	font-size:16px;
+		   	line-height:1.6em;
+		   	text-transform:capitalize;
+		   	font-weight: normal;
+	   	}
+	</style>
+	<body>   
+		<div class="wars">
+			<div class="down">
+				<div class="down_inner inner"></div>
+			</div>
+			<h5>19%</h5>
+			<div class="down">
+				<div class="down_inner inner1"></div>
+			</div>
+			<h5>49%</h5>
+			<div class="down">
+				<div class="down_inner inner2"></div>
+			</div>
+			<h5>81%</h5>
+			<div class="down">
+				<div class="down_inner inner3"></div>
+			</div>
+			<h5>Download complete!</h5>
+		</div>
+	</body>
+</html>
