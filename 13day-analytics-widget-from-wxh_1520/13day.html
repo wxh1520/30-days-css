@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-06-17-analytics-widget</title>
+	</head>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color: #fff; 
+	    }
+	    a {
+			color: #000;
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		.wrapper{
+			width: 800px;
+		    background: url(img/analytics-widget.png) no-repeat scroll;
+		    height: 500px;
+		    margin: 20px auto;
+		    position: relative;
+		    padding:5.5%;
+		}
+		.widget{
+			width:550px;
+			height:200px;
+			padding:5px;
+			background:#5a6171;
+			margin:0 auto;
+			border-radius:5px;
+			box-shadow:0px 0px 3px 2px #131313;
+			background-image:linear-gradient(to bottom,rgb(205, 213, 230), rgb(72, 72, 72))
+			
+		}
+		.wid{
+			width:60px;
+			height:60px;
+			background:#5a6171;
+			float:right;
+			border:1px solid #263f45;
+			margin-top:-20px;
+			border-radius:5px;
+			box-shadow:0px 0px 0px 5px #C1C9DA;
+			padding:5px;
+		}
+		.tile{
+			padding:5px 0;
+			text-transform:capitalize;
+			color:#626262;
+		}
+		.tile select{
+			border-radius:10px;
+			padding:0 5px;
+			border:1px solid #8b92a3;
+			background:#adb6cd;
+			color:#515d77;
+			margin-left:5px;
+			outline:none;
+		}
+		.data-cont{
+			float:left;
+			overflow: hidden;
+		}
+		.data-cont ul li{
+			display:inline-block;
+			padding:5px 7px;
+			color:#9aa4b8;
+		}
+		.details_data{
+			text-align: center;
+		}
+		.details_data h1{
+			font-size:4em;
+			color:#242831;
+		}
+		.details_data .rate{
+			display: inline-block; 
+			padding:4px;
+		}
+		.rate span{
+			font-size:16px; 
+			padding:8px 0px; 
+			color:#263F45;
+		}
+		.rate h2{
+			font-weight:normal;
+			font-size:30px;
+		}
+	</style>
+	<body>
+		<div class="wrapper">
+			<div class="widget">
+				<div class="tile">
+					<span>visitors overview for</span>
+					<select>
+						<option>3drops</option>
+					</select>
+				</div>
+				<div class="data-cont">
+					<img src="img/widget.png" />
+					<ul>
+						<li><span>08-15/12</span></li>
+						<li><span>16-23/12</span></li>
+						<li><span>24-31/12</span></li>
+						<li><span>01-08/01</span></li>
+					</ul>
+				</div>
+				<div class="details_data">
+					<h1>4,893</h1>
+					<div class="rate">
+						<span>bounce rate</span>
+						<h2>42%</h2>
+					</div>
+					<div class="rate">
+						<span>New visitors</span>
+						<h2>58%</h2>
+					</div>
+				</div>
+			</div>
+			<div class="wid">
+				<img src="img/dget.png" />
+			</div>
+		</div>
+	   
+	</body>
+</html>
