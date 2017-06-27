@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-06-26-tabbed-nav</title>
+	</head>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+		 body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color: #fff;
+	    }
+	    a {
+			color: #000;
+			text-decoration: none;
+		}
+		.wrap{
+			width:800px;
+			height:500px;
+			margin:20px auto;
+			padding:7%;
+			background:#a7a7aa;
+			background:linear-gradient(to right,#aaaba7,#dad9d9,#aaaba7);
+		}
+		.cont{
+			width:350px;
+			height:auto;
+			margin:0px auto;
+			border-radius:5px;
+			background:#fff;
+			box-shadow:0px 0px 3px 1px #848181;
+		}
+		.clause{
+			padding: 30px 20px;
+    		border-bottom: 1px solid #c8c8c8;
+			
+		}
+		.subscribe{
+			width: 190px;
+		    position: relative;
+		    color: #626262;
+		    float: right;		   
+		    font-size: 12px;
+		    line-height:25px;
+		}
+		.subscribe:before{
+			content: '\2715';
+		    position: absolute;
+		    z-index: 2;
+		    background: #ccc;
+		    right: -10px;
+		    top: -20px;
+		    padding: 5px;
+		    color: #fff;
+		    font-weight: bold;
+		    border-radius: 50px;
+		    height: 10px;
+		    line-height: 10px;
+		}
+		.subscribe h2{
+			text-transform:uppercase;
+		}
+		.subscribe p{
+			color:#ccc;
+		}
+		.inpt{
+			background: #d6d6d6;
+		    padding: 15px;
+		    border-radius: 0px 0px 5px 5px;
+		    box-shadow: inset 0 2.5em 0 hsl(0, 0%, 87%);
+		}
+		.post{
+			display: inline-block;
+			float:left;
+			color: #343434;
+			min-width: 265px;
+			height: 35px;
+			background: #fbfbfb;
+			border: 1px solid #7b7b7b;
+			border-right:0px;
+			padding: 8px 10px;
+			box-shadow: inset 0 2px 3px #c5c5c5;
+			border-radius: 50px 0px 0px 50px;
+			outline:none;
+		}
+		.postfix{
+			display: inline-block;
+			width:55px;
+			height:35px;
+			padding: 8px 10px;
+			background:linear-gradient(to bottom,#c5e6c4 0%,#5de25a 100%);
+			border: 1px solid #3e9642;
+			color: #fff;
+			border-radius: 0px 50px 50px 0px;
+			text-align:center;
+		}
+		.postfix:before{
+		    content: '\2714';
+		    font-size: 30px;
+		    top: 0px;
+		    left: 0px;
+		    color: #31be2e;
+		    line-height: 20px;
+		    font-weight: bold;
+		    text-shadow:1px 0px 1px #424040;
+    		}
+	</style>
+	<body>
+		<div class="wrap">
+			 <div class="cont">
+			 	<div class="clause">
+			 		<img src="img/281.png"/>
+			 		<div class="subscribe">
+			 			<h2>subscribe</h2>
+			 			<p>
+			 				Subscribe to our mailing list to get the updates to your email inbox.
+			 			</p>
+			 		</div>
+			 	</div>
+			 	<div class="inpt">
+			 		<input class="post" type="text"/>
+				 	<span class="postfix"></span>
+			    </div>
+			 </div>
+		</div>
+	</body>
+</html>
