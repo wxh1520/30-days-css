@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-07-13</title>
+	</head>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+	    
+		body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color: #62626;
+	      line-height:1em;
+	      text-align:center;
+	      background:#d0d0d0;
+	    }
+	    a {
+			color: #000;
+			text-decoration: none;
+		}
+		ul li{
+			list-style:none;
+			outline:0;
+		}
+		.container{
+			width:400px;
+			margin:0 auto;
+			text-align:left;
+		}
+		h1{
+			margin:20px auto;
+			font-weight:300;
+		}
+		p{
+			margin-bottom:10px;
+		}
+		.container .main_tree{
+		   display: inline-block;
+		   width:300px;
+		}
+		.pure-tree{
+			text-align: left;
+			
+		}
+		.pure-tree label{
+			display:block;
+			cursor:pointer;
+			border-bottom:1px dashed #B0B9C5;
+			padding:15px 0;
+		}
+		.pure-tree label::before {
+			content: "\f114";
+		    width: 1em;
+		    height: 1em;
+		    line-height: 1em;
+		    display: inline-block;  
+		    padding-right: .75em;
+		}
+		.pure-tree:not(.main_tree){
+			padding-left:20px;
+		}
+		.pure-tree:not(.main-tree) li {
+		    overflow: hidden;
+		    display: block;
+		}
+		.pure-tree .pure-tree_link a {
+		    padding: 1.500em 1.125em 0.750em 0;
+		    display: block;
+		    color: #717780;	   
+		}
+
+	</style>
+	<body>
+		<header>
+			<h1>Pure CSS Tree</h1>
+			<p>...a folders tree view, without JS :P</p>
+		</header>
+		<div class="container">
+			<ul class="main_tree pure-tree">
+				<li>
+				   <label>views</label>
+				   <ul class="pure-tree">
+				        <li class="pure-tree_link"><a href="##">index.html</a></li>
+				        <li>
+					      	<label>layout</label>
+					      	<ul class="pure-tree">
+					      		<li>
+					      			<label>base</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      		<li>
+					      			<label>footer</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      	</ul>
+				        </li>
+					    <li>
+					    	<label>partials</label>
+					    	<ul class="pure-tree">
+					      		<li>
+					      			<label>header</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      		<li>
+					      			<label>list</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      		<li>
+					      			<label>message</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      		<li>
+					      			<label>panel</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      	</ul>
+					    </li>
+					    <li>
+					    	<label>ul</label>
+					    	<ul class="pure-tree">
+					      		<li>
+					      			<label>box-color</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      		<li>
+					      			<label>button</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      		<li>
+					      			<label>charts</label>
+					      			<ul class="pure-tree">
+					      				<li class="pure-tree_link"><a href="##">index.html</a></li>
+					      			</ul>
+					      		</li>
+					      	</ul>
+					    </li>
+				   </ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
