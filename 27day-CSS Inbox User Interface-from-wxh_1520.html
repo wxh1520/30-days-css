@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-07-18</title>
+	</head>
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+	    
+		body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size: 14px;
+	      color: #626262;
+	      line-height:1em;
+	      text-align:center;
+	    }
+	    a {
+			color: #000;
+			text-decoration: none;
+		}
+		ul li{
+			list-style:none;
+			outline:0;
+		}
+		.container{
+			width:350px;
+			height:487px;
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			margin:0 auto;
+		   text-align: center;
+		   box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.16);			
+		}
+		.title_cont{
+			background: #333658;
+			overflow:hidden;
+		}
+		.title_cont .header_icon{
+			float:left;
+			width:33%;
+			height:40px;
+			text-align:left;
+		}
+		.header_icon img {
+		    margin:8px;
+		    cursor: pointer;
+		    width:38px;
+		}
+
+		.title_cont h3{
+			color:#aeb1d8;
+			text-transform:uppercase;
+			font-weight:300;
+			height:60px;
+			margin:0;
+			float:left;
+			width:33%;
+			line-height:60px;
+			letter-spacing:1px;
+		}
+		.container ul li {
+			float:left;
+			display:block;
+			max-height:71px;
+			width:100%;
+			cursor:pointer;
+			overflow:hidden;
+			text-align: left;
+			background:#f5f5f5;
+			box-shadow:0px -1px rgba(0, 0, 0, 0.07);
+			color:white;
+		}
+		.container ul li:hover{
+			background:#E9E9E9;
+		}
+		.container li:hover > .face .color_bar {
+			width: 81px;
+			-webkit-transition-property: width;
+			transition-property: width;
+			-webkit-transition-duration: .4s;
+			        transition-duration: .4s;
+			-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			}
+		.container li:hover > .face .color_bar span {
+			opacity: 1;
+			-webkit-transition-property: opacity;
+			transition-property: opacity;
+			-webkit-transition-duration: .2s;
+			        transition-duration: .2s;
+			-webkit-transition-timing-function: linear;
+			-webkit-transition-delay: .3s;
+			transition-delay: .3s;
+			}
+		.face {
+		    float: left;
+		    margin-right: 10px;
+		    position: relative;
+			}
+		.face img {
+		    height: 81px;
+		}
+        .face .color_bar {
+		    float: right;
+		    width: 6px;
+		    background: #56b699;
+		    position: absolute;
+		    right: 0;
+		    text-align: center;
+		    height: 71px;
+		    top: 0;
+		    z-index: 1;
+		}
+		.two {
+			background: #5674B6 !important;
+			}
+		.three {
+		    background: #D05E5E !important;
+		}
+		.four {
+		    background: #ACD35D !important;
+		}
+		.five {
+		    background: #EA9739 !important;
+		}
+		.six {
+		    background: #B6568D !important;
+		}
+
+		.color_bar span{
+			opacity:0;
+			font-size:12px;
+			position: relative;
+			top:30px;
+		}
+		.container ul li h2{
+			font-size:12px;
+			display:inline-block;
+			color:#515151;
+			text-transform:uppercase;
+			font-weight:700;
+			margin: 10px 0px 0px 0px;
+			padding-top: 0px;	
+		}
+		.container ul li h3{
+			font-size:8px;
+			font-weight:300;
+			margin: 5px 0px 10px 0px;
+			text-transform: uppercase;
+			color: #B2B2B2;
+		}
+		.container ul li h4{
+			font-size: 10px;
+			font-weight: 600;
+			margin: 0;
+			color: #919191;
+		}
+		.container .active{
+			background:#6cbe63;
+		}
+		.dot{
+			width:6px;
+			height:6px;
+			background:#cdcdcd;
+			display:inline-block;
+			position:relative;
+			top:-1px;
+			left:3px;
+			border-radius:100%;
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="title_cont">
+				<div class="header_icon">
+					<img src="img/1.png"/>
+				</div>
+				<h3>inbox</h3>
+			</div>
+			<ul>
+				<li>
+					<div class="face">
+						<img src="img/1.png"/>
+						<div class="color_bar one">
+							<span>Read</span>
+						</div>
+					</div>
+					<h2>aspca</h2>
+					<p class="active dot"></p>			
+					<h3>subj: thanks, you are amazing</h3>
+					<h4>Your generous donation saved 3 million puppies...</h4>
+				</li>
+				<li>
+					<div class="face">
+						<img src="img/1.png"/>
+						<div class="color_bar two">
+							<span>Read</span>
+						</div>
+					</div>
+					<h2>Nobel prize foundation</h2>
+					<p class="active dot"></p>			
+					<h3>subj: thanks, you are amazing</h3>
+					<h4>Your generous donation saved 3 million puppies...</h4>
+				</li>
+				<li>
+					<div class="face">
+						<img src="img/1.png"/>
+						<div class="color_bar three">
+							<span>Read</span>
+						</div>
+					</div>
+					<h2>megan fox</h2>
+					<p class="active dot"></p>			
+					<h3>subj: thanks, you are amazing</h3>
+					<h4>Your generous donation saved 3 million puppies...</h4>
+				</li>
+				<li>
+					<div class="face">
+						<img src="img/1.png"/>
+						<div class="color_bar four">
+							<span>Read</span>
+						</div>
+					</div>
+					<h2>Linkedin</h2>
+					<p class="active dot"></p>			
+					<h3>subj: thanks, you are amazing</h3>
+					<h4>Your generous donation saved 3 million puppies...</h4>
+				</li>
+				<li>
+					<div class="face">
+						<img src="img/1.png"/>
+						<div class="color_bar five">
+							<span>Read</span>
+						</div>
+					</div>
+					<h2>Jesse pinkman</h2>
+					<p class=" dot"></p>			
+					<h3>subj: thanks, you are amazing</h3>
+					<h4>Your generous donation saved 3 million puppies...</h4>
+				</li>
+				<li>
+					<div class="face">
+						<img src="img/1.png"/>
+						<div class="color_bar six">
+							<span>Read</span>
+						</div>
+					</div>
+					<h2>James cameron</h2>
+					<p class="active dot"></p>			
+					<h3>subj: thanks, you are amazing</h3>
+					<h4>Your generous donation saved 3 million puppies...</h4>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
