@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>wxh1520-17-07-26</title>
+	</head>
+    <style type="text/css">
+    	*{
+			padding:0;
+			margin:0;
+			box-sizing: border-box;
+		}
+	    html{
+	    	height:100%;
+   			background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+	    }
+		body {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	      font-size:62.5%;
+	      color: #626262;
+	    }
+	    a {
+			color: #000;
+			text-decoration: none;
+		}
+		ul li{
+		    list-style: none;
+		}
+		input, button {
+		    outline: none;
+		    border: none;
+		}
+		.wrap{
+			width:500px;
+			height:500px;
+			margin:50px auto;	
+			position:relative;
+		}
+		#msform{
+			text-align: center;
+		}
+		#progressbar{
+			margin-bottom:30px;
+			overflow:hidden;
+		}
+		#progressbar li {
+			list-style-type: none;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 9px;
+			width: 33.33%;
+			float: left;
+			position: relative;
+		}
+		#progressbar li span{
+            color: #333;
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            line-height: 20px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        #progressbar li:nth-child(2):before,
+        #progressbar li:nth-child(2):after{
+            content: "";
+            position: absolute;
+            top: 10px;
+            width: 150px;
+            height: 1px;
+            background: #fff;
+            z-index: -1;
+        }
+        #progressbar li.active:before,
+        #progressbar li.current:after{background: #27ae60;}
+        #progressbar li.active .step-item,
+        #progressbar li.current .step-item{
+            color: #fff;
+            background: #27ae60;
+        }
+		#progressbar li:nth-child(2):before{left: -80px;}
+        #progressbar li:nth-child(2):after{right: -80px;}
+		#msform .step-wrapper{
+			width:80%;
+			margin:0 10%;
+			position:relative;
+			background:#fff;
+			border:0 none;
+			border-radius:3px;
+			box-shadow:0 0 15px 1px rgba(0, 0, 0, 0.4);
+			padding:20px 30px;
+			box-sizing:border-box;
+		}
+		.fs-title{
+			font-size:15px;
+			text-transform:uppercase;
+			color:#2C3E50;
+			margin-bottom:10px;
+		}
+		.fs-subtitle{
+			font-size:13px;
+			font-weight:normal;
+			color:#666;
+			margin-bottom:20px;
+		}
+		#msform .action-button {
+		    width: 100px;
+		    background: #27AE60;
+		    font-weight: bold;
+		    color:#fff;
+		    border: 0 none;
+		    border-radius: 1px;
+		    cursor: pointer;
+		    padding: 10px 5px;
+		    margin: 10px 5px;
+		}
+		#msform .step-wrapper:not(:first-of-type) {
+		    display: none;
+		}
+		#msform input, #msform textarea {
+		    padding: 15px;
+		    border: 1px solid #ccc;
+		    border-radius: 3px;
+		    margin-bottom: 10px;
+		    width: 100%;
+		    box-sizing: border-box;
+		    font-family: montserrat;
+		    color: #2C3E50;
+		    font-size: 13px;
+		}
+		#msform .action-button {
+		    width: 100px;
+		    background: #27AE60;
+		    font-weight: bold;
+		    color: #fff;
+		    border: 0 none;
+		    border-radius: 1px;
+		    cursor: pointer;
+		    padding: 10px 5px;
+		    margin: 10px 5px;
+		}
+		#msform .action-button:hover, #msform .action-button:focus {
+			box-shadow: 0 0 0 2px #fff, 0 0 0 3px #27AE60;
+		}
+   </style>
+	<body>
+		<div class="wrap">
+			<form id="msform">
+				<ul id="progressbar">
+				    <li class="active"><span class="step-item">1</span><br>Account Setup</li>
+				    <li><span class="step-item">2</span><br>Social Profiles</li>
+				    <li><span class="step-item">3</span><br>Personal Details</li>
+				</ul>
+				<div class="step-wrapper  step-one">
+					<h2 class="fs-title">Create your account</h2>
+					<h3 class="fs-subtitle">This is step 1</h3>
+					<input type="text" name="fname" placeholder="First Name" />
+					<input type="text" name="lname" placeholder="Last Name"/>
+					<input type="text" name="phone" placeholder="Phone"/>
+					<input type="button" name="next" class="next action-button" value="Next"/>
+				</div>
+				<div class="step-wrapper step-two">
+					<h2 class="fs-title">Social Profiles</h2>
+					<h3 class="fs-subtitle">Your presence on the social network</h3>
+					<input type="text" name="twitter" placeholder="twitter" />
+					<input type="text" name="facebook" placeholder="facebook" />
+					<input type="text" name="gplus" placeholder="Google Plus"/>
+					<input type="button" name="previous" class="previous action-button" value="Previous"/>
+					<input type="button" name="next" class="next_two action-button" value="Next"/>
+				</div>
+				<div class="step-wrapper step-three">
+					<h2 class="fs-title">Personal Details</h2>
+					<h3 class="fs-subtitle">We will never sell it</h3>
+					<input type="text" name="fname" placeholder="First Name"/>
+					<input type="text" name="lname" placeholder="Last Name" />
+					<input type="text" name="phone" placeholder="phone"/>
+					<textarea name="address" placeholder="Address"></textarea>
+					<input type="button" name="previous" class="previous_three action-button" value="Previous"/>
+					<input type="button" class="submit action-button" value="Submit"/>
+				</div>
+			</form>	
+		</div>
+	</body>
+	<script src="http://www.rmhb.com.cn/images/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(".next").click(function(){
+				$(this).parent().hide();
+				$(".step-two").show();
+				$("#progressbar li:nth-child(2)").addClass("active")
+			})
+			$(".previous").click(function(){
+				$(this).parent().hide();
+				$(".step-one").show();
+				$("#progressbar li:nth-child(2)").removeClass("active");
+			})
+			$(".next_two").click(function(){
+				$(this).parent().hide();
+				$(".step-three").show();
+				$("#progressbar li:nth-child(2)").addClass("current")
+				$("#progressbar li:last-child").addClass("current")
+			})
+			$(".previous_three").click(function(){
+				$(this).parent().hide();
+				$(".step-two").show();
+				$("#progressbar li:nth-child(2)").removeClass("current");
+                $("#progressbar li:last-child").removeClass("current");
+			})
+		});
+	</script>
+</html>
